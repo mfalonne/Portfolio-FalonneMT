@@ -1,6 +1,6 @@
 //REACT FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
@@ -18,27 +18,27 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-            <FontAwesomeIcon icon={faBars} style={{color:'#fff'}} />
+          <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <a className="nav-link " aria-current="page" href="#accueil">
                 Accueil
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#apropos">
                 A Propos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Expériences
+              <a className="nav-link" href="#portfolio">
+                Portfolio
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#contact">
                 Contacts
               </a>
             </li>
