@@ -3,8 +3,8 @@
 
 :root {
   --primary-white: #fff;
-  --primary-orange: rgb(255, 166, 0);
-  --primary-dark: rgb(255, 255, 255, 0);
+  --primary-orange: rgb(147, 110, 40);
+  --primary-dark: rgba(59, 59, 64);
   --primary-header: rgb(52, 58, 65);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
@@ -15,6 +15,15 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+.bgColor1 {
+  background-color: var(--primary-orange) !important;
+}
+.bgcolor2 {
+  background-color: var(--primary-dark) !important;
+}
+.color1 {
+  color: var(--primary-orange) !important;
+}
 
 /*************************NAVBAR*****************************************/
 .logo {
@@ -22,12 +31,12 @@ body {
   font-weight: 400;
   font-size: 2rem !important;
   font-style: normal;
-  color: var(--primary-orange) !important;
+  color: var(--primary-white) !important;
 }
 
 /*********************** MENU LINKS************/
 nav {
-  background-color: rgba(0, 0, 0, 0.945);
+  background-color: rgba(29, 28, 28, 0.945);
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -94,22 +103,26 @@ nav a.nav-link {
 }
 
 /*************HEADER MAIN OFFER BUTTON**********/
-
-.btn-main-offer {
-  border: 1px solid var(--primary-red);
-  text-transform: uppercase;
-  border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem;
-  color: var(--primary-white);
-  margin: 2rem;
-  z-index: 11;
-  text-decoration: none !important;
-  transition: 0.2s ease-in-out;
+.btn1 {
+  background-color: var(--primary-orange) !important;
+  color: var(--primary-white) !important;
 }
-.btn-main-offer:hover {
+
+.btn1:hover {
+  background-color: transparent !important;
+  border: 1px solid var(--primary-orange) !important;
+  color: var(--primary-white) !important;
+}
+
+.btn2 {
+  background: transparent;
+  border: 1px solid var(--primary-orange) !important;
+  color: var(--primary-white) !important;
+}
+.btn2:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-red);
-  color: var(--primary-white);
+  background-color: var(--primary-orange) !important;
+  color: var(--primary-white) !important;
 }
 
 /*************PARTICLES JS*****************/
@@ -134,7 +147,7 @@ nav a.nav-link {
   border-radius: 10px;
 } */
 .qualite {
-  background-color: black;
+  background-color: var(--primary-dark) !important;
   width: 30%;
   height: 100px;
 }

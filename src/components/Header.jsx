@@ -110,7 +110,7 @@ const Header = () => {
       />
       <div className="header-wraper">
         <div className="main-info">
-          <h1>Falonne MUYOMBO TSHOBOLA</h1>
+          <h1>Falonne MUYOMBO TSHIBOLA</h1>
           <TypingEffect
             className="typed-text"
             text={[
@@ -122,12 +122,17 @@ const Header = () => {
             typingDelay={500}
             loop={true}
           />
-          <div className="bouton">
-            <a href="#" className="btn-main-offer">
+          <div className="d-flex justify-content-center mt-5 gap-3">
+            <a
+              href="/mon_cv.pdf"
+              download="Mon_CV.pdf"
+              className="btn btn1 bgColor1 btn-lg text-white"
+            >
               Télécharger CV
             </a>
-            <a href="#" className="btn-main-offer">
-              Contacter moi
+            <a href="#contact" className="btn btn2  btn-lg">
+              {" "}
+              Contacter-Moi
             </a>
           </div>
         </div>
